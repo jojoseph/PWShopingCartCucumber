@@ -1,0 +1,90 @@
+[
+  {
+    "description": "  As a user\n  I want to log in with valid credentials\n  So that I can access the protected dashboard",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality;successful-login",
+        "keyword": "Scenario Outline",
+        "line": 15,
+        "name": "Successful Login",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the login page",
+            "match": {
+              "location": "steps\\login.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3180850899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I enter \"demo\" as username",
+            "match": {
+              "location": "steps\\login.steps.js:16"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 985999,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'username')\n    at World.<anonymous> (C:\\MyFolder\\GitWS\\PWShopingCart\\steps\\login.steps.js:17:17)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I enter \"demo\" as password",
+            "match": {
+              "location": "steps\\login.steps.js:20"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I click the login button",
+            "match": {
+              "location": "steps\\login.steps.js:24"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should be logged in successfully",
+            "match": {
+              "location": "steps\\login.steps.js:28"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Functionality",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]
