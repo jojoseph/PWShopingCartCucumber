@@ -1,5 +1,3 @@
-const { chromium } = require('playwright');
-
 class LoginPage {
   constructor(page) {
     this.page = page;
@@ -13,4 +11,4 @@ class LoginPage {
   }
 }
 
-module.exports = LoginPage;
+export default LoginPage;
