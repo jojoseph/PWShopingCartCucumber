@@ -13,6 +13,9 @@ Before(async function () {
     await this.launchBrowser();
     await this.newPage();
 });
+Before({tags: '@validation'}, async function () {   //"@foo" "@foo and @bar" "@foo or @bar"
+  await this.page.goto('http://example.com'); // Replace with your app's URL
+});
 
 After(async function () {
   await this.closeBrowser();

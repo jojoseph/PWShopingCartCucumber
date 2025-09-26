@@ -2,7 +2,8 @@ Feature: Login Functionality
   As a user
   I want to log in with valid credentials
   So that I can access the protected dashboard
-
+  @Regression
+  @Smoke
   Scenario Outline: Successful Login
     Given I am on the login page
     When I enter "<username>" as username

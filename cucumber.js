@@ -1,3 +1,13 @@
 module.exports = {
-  default: `--format progress --require step_definitions/*.js --require support/*.js`
+  default: {
+    require: [
+      'step_definitions/*.js',
+      'support/*.js'
+    ],
+    format: [
+      'progress',
+      'html:reports/cucumber-report.html',
+      'json:reports/cucumber-report.json'
+    ]
+  }
 };
